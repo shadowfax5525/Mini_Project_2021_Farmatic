@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width : 1100px)" href="static\css\phone.css">
+    <script src="/static/js/place_names.js"></script>
+    <title>predict_crop</title>
+</head>
+<body>
+  <nav id="navbar" class="h-nav-resp navbar">
+    <div id="logo" class="v-class-resp">
+        <img src="static\img\Farmetic_logo.png" alt="">
+    </div>
+    
+    
+    <ul class="nav-list v-class-resp">
+        <div id="logo_mobile">
+            <img src="static\img\Farmetic_logo.png" alt="">
+        </div>  
+        <li id="li1" class="item"><a href="/">Home</a></li>
+        <li id="li2" class="item"><a href="/#about-section">About</a></li>
+        <li id="li3" class="item"><a href="/predict_crop">Predict Crop</a></li>
+        <li id="li4" class="item"><a href="/#contact">Contact Us</a></li>
+        
+
+    </ul>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+</nav>
+
+{% if prediction %}
+  <div class="result_container">
+    <h2 class="heading">You should grow <span style="color: #b5dd35;">{{prediction}}</span> in your farm !! </h2>
+  </div>
+{% endif %}
+
+
+
+
+<h3 class="heading">Fill up the form to predict the right <span style="color: #b5dd35;">Crop</span> that suits your farm.</h3>
+
+<div class="form_container">
+  <form action="/crop-predict" method="POST">
+    <label for="fname">Nitrogen level</label>
+    <input type="number" id="fname" name="nitrogen" placeholder="Enter the Nitrogen level in soil">
+
+    <label for="lname">Phosphorous level</label>
+    <input type="number" id="lname" name="phosphorous" placeholder="Enter Phosphorous level in soil">
+
+    <label for="lname">Pottasium level</label>
+    <input type="number" id="lname" name="pottasium" placeholder="Enter Pottasium level in soil">
+
+    <label for="lname">Rainfall in (mm)</label>
+    <input type="number" id="lname" name="rainfall" placeholder="Enter amount of Rainfall">
+
+    <label for="country">State</label>
+    <select
+        onchange="print_city('state', this.selectedIndex);"
+        id="sts"
+        name="stt"
+        class="form-control"
+        style="font-weight: bold; color: black;"
+        
+        required
+      ></select>
+
+    <label for="country">City</label>
+    <select
+        id="state"
+        class="form-control"
+        name="city"
+        style="font-weight: bold; color: black;"
+        required
+      ></select>
+      <script language="javascript">
+        print_state("sts");
+      </script>
+  
+    <input id="submit_btn" type="submit" value="Submit">
+  </form>
+</div>
+<script src="/static/js/resp.js"></script>
+
+<!-- <script type="text/JavaScript" src="{{ url_for('static', filename='scripts/cities.js') }}"></script> -->
+
+</body>
+</html>

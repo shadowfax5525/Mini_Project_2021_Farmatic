@@ -1,0 +1,401 @@
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a {
+    font-size: 1.1rem;
+    padding: 4px 18px;
+}
+
+#logo img {
+    height: 80px;
+    margin: 11px 32px;
+}
+
+
+/* Home section */
+
+#home {
+    height: 247px;
+    padding: 47px 21px;
+    ;
+}
+
+#home::before {
+    height: 480px;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+
+/* services section */
+
+#services {
+    flex-direction: column;
+}
+
+#services .box {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 11px;
+    margin: 2px 19px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    /* transition: all 1s ease-in-out 3s; */
+}
+
+
+/*  client section*/
+
+#client {
+    flex-wrap: wrap;
+}
+
+#client img {
+    width: 155px;
+}
+
+
+/* devloper section */
+
+#devloper {
+    position: relative;
+    padding: 31px 11px;
+}
+
+#me {
+    display: flex;
+    flex-direction: column;
+}
+
+.meinfo p {
+    padding: 10px 10px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.meinfo h2 {
+    padding: 10px 0px;
+}
+
+.meinfo h1 {
+    padding: 24px 0px;
+}
+
+.meinfo p {
+    text-align: center;
+    padding: 22px 0px;
+}
+
+
+
+.meimg img {
+    height: 350px;
+    width: 350px;
+    border-radius: 30px;
+}
+
+#me .h-primary {
+    padding: 0px;
+}
+
+
+/* contact section */
+
+#contact-box {
+    padding-bottom: 0px;
+    margin: 0px 0px 0px -22px;
+}
+
+#contact::before {
+    position: relative;
+    margin: 80px 30px 10px 4px;
+    width: 348px;
+    height: 356px;
+}
+
+#contact-box form {
+    width: 77%;
+}
+
+
+/* Footer */
+
+
+/* utility classes */
+
+.h-primary {
+    font-size: 32px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}*/
+
+.bodycard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+body .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+}
+
+body .container .card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+body .container .card:nth-child(1) .box .content a {
+    background: #737374;
+}
+
+body .container .card:nth-child(2) .box .content a {
+    background: #737374;
+}
+
+body .container .card:nth-child(3) .box .content a {
+    background: #737374;
+}
+
+body .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+body .container .card .box:hover {
+    transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+body .container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+body .container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+body .container .card .box .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+body .container .card .box .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+body .container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+body .container .card .box .content a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+}
+
+.card {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    padding: 10px;
+}
+
+
+
+.main_photo img{
+    width: 370px;
+
+}
+.about-farmetic-img img {
+    width: 250px;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.about_para{
+    text-align: center;
+    padding: 46px 61px;
+
+}
+.form_container {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    width: 334px;
+    margin: auto;
+    margin: 50px auto;
+}
+
+.burger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    top: 15px;
+}
+
+.v-class-resp {
+    opacity: 0;
+
+}
+.item{
+    display: none;
+}
+
+.h-nav-resp {
+    transition: 1.0s;
+    height: 60px;
+}
+#logo{
+    display: none;
+}
+.line {
+    width: 33px;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 3px 3px;
+}
+#navbar ul{
+    flex-direction: column;
+    align-items: center;
+
+}
+#navbar ul li{
+    margin: 15px;
+    padding-left: 0px;
+    
+
+}
+#logo_mobile{
+    display: block;
+    width: 80px;
+
+}
+
+#logo_mobile img{
+
+    width: 80px;
+    margin-top: 10px;
+
+}
+
+#navbar{
+    border-bottom: 2px solid;
+    padding: 0px;
+
+}
+#home {
+    height: 247px;
+    padding: 200px 21px;
+}
+
+.result_container{
+
+    border: 2px solid;
+    width: 301px;
+    
+    margin: 45px auto;
+
+    border-radius: 43px;
+
+
+}
+
+.chevron_container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: auto;
+    padding-top: 150px;
+}

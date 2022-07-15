@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmmatic</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static\css\style.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" media="screen and (max-width : 1100px)" href="static\css\phone.css">
+
+</head>
+
+<body>
+    <nav id="navbar" class="h-nav-resp navbar">
+        <div id="logo" class="v-class-resp">
+            <img src="static\img\Farmetic_logo.png" alt="">
+        </div>
+        
+        
+        <ul class="nav-list v-class-resp">
+            <div id="logo_mobile">
+                <img src="static\img\Farmetic_logo.png" alt="">
+            </div>  
+            <li id="li1" class="item"><a href="#">Home</a></li>
+            <li id="li2" class="item"><a href="#about-section">About</a></li>
+            <li id="li3" class="item"><a href="/predict_crop">Predict Crop</a></li>
+            <li id="li4" class="item"><a href="#contact">Contact Us</a></li>
+            
+
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+
+    <section id="home">
+        <div class="main_photo">
+            <img src="static\img\Main_name.jpg" alt="">
+        </div>
+        <div class="chevron_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <span class="text">Scroll down</span>
+        </div>
+    </section>
+
+
+    
+
+
+
+
+
+
+    <br>
+
+    <section class="services-countainer">
+        <div class="h-primaryd" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <h1 class="h-primary">Predict <span style="color: #b5dd35;">Crop</span> for your Farm here !</h1>
+        </div>
+        <div class="pre-btn">
+            <a href="/predict_crop"><button class="button">Predict</button></a>
+            
+        </div>
+        
+
+        
+        
+        
+    </section>
+  
+
+
+    <section id="about-section">
+
+        <div class="about-container">
+            <div class="about">
+                <div class="h-primaryd" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+                    <h1 class="h-primary">About <span style="color: #b5dd35;">Farmmatic</span></h1>
+                </div>
+                <div class="about-text">
+                    <p class="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio libero laborum quo perspiciatis id eveniet rem numquam quae hic tenetur voluptate ratione commodi culpa aut deserunt fuga iste, facere velit iusto! Harum ex totam velit?</p>
+    
+                </div>
+            </div>
+            <div class="about-farmetic-img">
+                <img src="static\img\Farmetic.png" alt="">
+            </div>
+
+        </div>
+     
+    </section>
+    
+
+
+
+    <section id="contact">
+        <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <h1 class="h-primary">Contact <span style="color: #b5dd35;">Us</span></h1>
+        </div>
+
+        <div id="contact-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br>
+
+    <hr style="width:85% ;height: 1px ; margin: auto;color: black; background-color: black;">
+    <br>
+
+    <footer>
+        <p style="text-align: center;">Mini Project - Crop Prediction System</p>
+        <p style="text-align: center;">A Machine Learning Project Done By : </p>
+        <p style="text-align: center;">1)Nihal Nilesh Sarmalkar </p>
+        <p style="text-align: center;">2)Siddharth Kabra</p>
+        <p style="text-align: center;">3)Anchal Gupta</p>
+        <p style="text-align: center;">4)Shubham Pawaskar</p>
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: medium;">Farmmatic : Copyright - 2021</h1>
+        <br>
+        
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/static/js/resp.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+
+</body>
+
+</html>
